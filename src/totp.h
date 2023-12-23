@@ -48,8 +48,8 @@ uint32_t totp_strtoupper(char* str);
 struct __stotp* stotp_new(const char* __restrict__ secret);
 
 void stotp_url_generate(struct __stotp* stotp,
-			const char* issuer,
-			const char* account);
+						const char* issuer,
+						const char* account);
 
 struct __stotp* stotp_generate();
 struct __totp* totp_now(struct __stotp* __restrict__ stotp);
